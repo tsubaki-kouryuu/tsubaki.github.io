@@ -7,7 +7,7 @@ export default function SidebarContent() {
 
             <div>
                 <Link href="/" className="group">
-                    <h1 class="transition-colors duration-500 ease-in-out text-4xl/tight font-semibold text-white/85 group-hover:text-white">
+                    <h1 class="text-center lg:text-left transition-colors duration-500 ease-in-out text-4xl/tight font-semibold text-white/85 group-hover:text-white">
                         Tsubaki <span class="transition-colors duration-500 ease-in-out text-rose-300 group-hover:text-rose-400">Kouryuu</span>
                     </h1>
                 </Link>
@@ -27,7 +27,7 @@ export default function SidebarContent() {
                 </a>
 
                 <span class="flex-none group relative isolate flex items-center rounded-lg px-2 py-0.5 text-[0.8125rem]/6 font-medium gap-x-3">
-                    <span class="text-[.4rem] text-rose-300 mr-3">●</span> a simple Auri programmer
+                    <span class="hidden lg:block text-[.4rem] text-rose-300 mr-3">●</span> a simple Auri programmer
                 </span>
                 
             </div>
