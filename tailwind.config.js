@@ -1,3 +1,8 @@
+const isProd = process.env.NODE_ENV === 'production'
+
+let assetPath = isProd ? '/tsubaki.github.io/' : ''
+let tsubakiURL = assetPath + '/images/not-tsubaki.png'
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -8,9 +13,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'tsubaki': 'url(' + tsubakiURL + ')',
       },
     },
   },
