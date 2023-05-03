@@ -1,8 +1,8 @@
-const isProd = process.env.NODE_ENV === 'production'
+const isCustomDomainless = process.env.NODE_ENV === 'production'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  assetPrefix: isProd ? '' : '',
+  assetPrefix: isCustomDomainless ? '' : '',
   reactStrictMode: true,
   output: 'export',
   images: {
